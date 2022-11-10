@@ -424,13 +424,61 @@ a:hover{
     left:345px
 }
 
+.adaptiveOne{
+    display: none;
+}
+
+
+
 
 
 
 /* Portrait phones and smaller */
-@media(max-width: 480px) {
-    .boxrigh__baner{
+@media(max-width: 600px) {
+ 
+
+    .boxleft__reviews{
+     display: none;
+    }
+   
+.boxleft__link{
+    display: none;
+}
+
+    .boxleft__reviewstext{
         display: none;
     }
-}
+     .boxrigh__baner{
+        display: none;
+
+    }
+
+    .form{
+        position:absolute;
+        top: 0;
+        left: 0;
+        border-radius: 0px 0px 20px 10px;
+        width: 100%;
+    }
+
+    .columnOne{
+        position: absolute;
+        top: 400px;
+    }
+
+    .columnTwo{
+        position: absolute;
+        top: 1150px;
+        width: 280px;
+    }
+
+
+    .columnThree{
+        position: absolute;
+        top: 1900px;
+    }
+
+
+ 
+} 
 
