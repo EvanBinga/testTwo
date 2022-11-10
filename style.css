@@ -1,0 +1,436 @@
+ body{
+    font-family: 'Commissioner', sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+} 
+ 
+content{
+    height: 900px;
+}
+
+.boxright__dental{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 595px;
+}
+
+.form{
+    padding: 10px;
+    background-color: gray;
+    width: 340px;
+    height: 350px;
+    position: relative;
+    left: 750px;
+    top: 340px;
+    border-radius: 20px;
+    color: white;
+}
+
+.form__label{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid white;
+    display: block;
+}
+
+.form__label input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    position: relative;
+    outline: none;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+.form__label span{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    transition: 0.3s;
+    cursor: text;
+}
+
+.form__label input:focus + span{
+    top: -10px;
+    left: 10px;
+    font-size: 13px;
+}
+
+
+.form__title {
+    color: brown;
+
+}
+
+.columnOne__controls{
+    position: relative;
+    bottom: 650px;
+    z-index: 999999;
+    font-size: 40px;
+    color: brown;
+}
+
+
+.columnOne__btnPrev{
+    position: relative;
+    display: block;
+    cursor: pointer;
+  
+}
+
+.columnOne__btnNext{
+    position: relative;
+    left: 350px;
+    bottom: 50px;
+    display: block;
+    cursor: pointer;
+    
+}
+
+.ColumnOne__list{
+    pointer-events: none;
+
+
+}
+
+ .columnOne__btnPrev:hover{
+    color: gray;
+    transform: 0.3s;
+} 
+
+.columnOne__btnNext:hover{
+    color: gray;
+    transform: 0.3s;
+}
+
+
+
+/* .form__label_name:focus {}
+.form__label_number{}  */
+
+
+
+
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    rgb(71, 71, 71);
+}
+
+
+
+
+
+.ColumnOne__title_two{
+    pointer-events: none;
+}
+
+
+
+
+.form__button {
+    width: 170px;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+    top: 25px;
+    border: 0;
+}
+
+.form__button:hover {
+color: white;
+background-color: brown;
+transition: 0.3s;
+}
+
+
+
+
+
+
+.boxleft__img{
+    width: 100px;
+    height: 100px;
+}
+
+.boxleft__title{
+    font-size: 40px;
+    position: relative;
+    bottom: 300px;
+    color: brown;
+}
+
+.boxleft__text{
+    font-size: 23px;
+    position: relative;
+    bottom: 250px;
+    color: rgb(73, 73, 73);
+}
+
+.boxleft__colortext{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.boxleft__fontS{
+    font-size: 17px;
+    color: rgb(73, 73, 73);
+}
+
+.content{
+    display: flex;
+}
+
+.boxleft__saletext{
+    font-size: 30px;
+    color: brown;
+}
+
+.boxleft__button{
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    background-color: gray;
+    border-radius: 9px;
+    border: 0;
+    color: white;
+    position: relative;
+    bottom: 300px;
+}
+
+.boxleft__button:hover{
+    background-color: brown;
+    transition: 0.3s;
+}
+
+.boxleft__reviewsimg{
+    z-index: 99999;
+    position: relative;
+    bottom: 300px;
+    width: 120px;
+    height: 120px;
+    box-shadow: 1px 2px 5px 3px #1111;
+}
+
+.boxleft__reviews{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    box-shadow: 1px 2px 5px 3px #1111;
+    bottom: 30px;
+    right: 400px;
+    z-index: 9999;
+}
+
+
+.boxleft__reviewstext{
+    position: relative;
+    bottom: 170px;
+    left: 170px;
+    font-size: 14px;
+}
+
+.boxleft__link{
+    color: brown;
+    position: relative;
+    bottom: 160px;
+    left: 170px;
+}
+
+.boxleft__link:hover{
+    color: gray;
+    transition: 0.3s;
+}
+
+
+
+ .columnOne{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+.columnOne__content{
+    pointer-events: none;
+    padding: 15px;
+    right: 30px;
+    bottom: 300px;
+    position: relative;
+    margin-top: 300px;
+    width: 380px;
+    height: 700px; 
+    border-radius: 10px;
+    box-shadow: 1px 3px 2px 3px #1111;
+    list-style-type: none;
+}
+
+.columnOne__slidephoto{
+    width: 390px;
+    height: 400px;
+    right: 5px;
+    position: relative;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.ColumnOne__title_two{
+    color: brown;
+}
+
+
+li{
+    font-size: 13px;
+    list-style-type: none;
+    line-height: 23px;
+    pointer-events: none;
+}
+
+li:before {
+    content: "–";
+   }
+
+   .columnTwo{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
+.columnTwo__content{
+    pointer-events: none;
+    padding: 15px;
+    position: relative;
+    width: 380px;
+    height: 700px; 
+    border-radius: 10px;
+    box-shadow: 1px 3px 2px 3px #1111;
+    list-style-type: none;
+}
+
+
+.ColumnTwo__title_two{
+    color: brown;
+}
+
+
+
+.review__content{
+    position: relative;
+    top: 50px;
+}
+
+.review__title{
+    color: brown;
+}
+
+.review__item_list{
+position: relative;
+right: 20px;
+top: 10px;
+margin-top: 20px;
+padding: 18px;
+font-size: 13px;
+box-shadow: 1px 3px 2px 3px #1111;
+}
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover{
+  color: brown;
+  transition: 0.3s;
+}
+
+.columnThree{
+    width: 400px;
+    height: 400px;
+}
+
+.columnThree__content{
+    pointer-events: none;
+    padding: 15px;
+    position: relative;
+    width: 380px;
+    height: 700px; 
+    border-radius: 10px;
+    box-shadow: 1px 3px 2px 3px #1111;
+    list-style-type: none;
+    left: 30px;
+}
+
+
+.columnThree__list_img{
+    pointer-events: none;
+ width: 50px;
+ height: 50px;
+ padding-right: 15px;
+ position: relative;
+ top: 15px;
+}
+
+.columnThree__list_item{
+    pointer-events: none;
+    font-size: 15px;
+    margin-top: 50px;
+    line-height: 40px;
+    position: relative;
+    right: 20px;
+    top: 10px;
+    margin-top: 20px;
+    padding: 18px;
+    font-size: 13px;
+    box-shadow: 1px 3px 2px 3px #1111;
+}
+
+.hidden {
+    display: none;
+}
+
+.dragging {
+    opacity:0.5;
+  }
+
+  .over {
+    border: solid red;
+  }
+  
+
+.slide__one {
+    height: 370px;
+    width: 370px;
+}
+.slide__two {
+    height: 370px;
+    width: 370px;
+}
+.slider__controls {
+}
+.columnOne__btnPrev {
+    position: relative;
+    top: 460px;
+}
+.columnOne__btnNext {
+    position: relative;
+    top: 411px;
+    left:345px
+}
+
+
+
+
+/* Portrait phones and smaller */
+@media(max-width: 480px) {
+    .boxrigh__baner{
+        display: none;
+    }
+}
+
