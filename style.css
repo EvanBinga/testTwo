@@ -110,16 +110,7 @@ content{
 }
 
 
-
-/* .form__label_name:focus {}
-.form__label_number{}  */
-
-
-
-
-
-
-::-webkit-input-placeholder { /* WebKit browsers */
+::-webkit-input-placeholder { 
     color:    rgb(71, 71, 71);
 }
 
@@ -258,7 +249,7 @@ transition: 0.3s;
 
 
 .columnOne__content{
-    pointer-events: none;
+
     padding: 15px;
     right: 30px;
     bottom: 300px;
@@ -280,8 +271,15 @@ transition: 0.3s;
     margin: 0;
 }
 
+.ColumnOne__title{
+    pointer-events: none;
+    padding-left: 35px;
+}
+
 .ColumnOne__title_two{
+    pointer-events: none;
     color: brown;
+    padding-left: 35px;
 }
 
 
@@ -290,6 +288,10 @@ li{
     list-style-type: none;
     line-height: 23px;
     pointer-events: none;
+}
+
+.columnTwo__title{
+    padding-left: 20px;
 }
 
 li:before {
@@ -317,12 +319,49 @@ li:before {
 
 
 .ColumnTwo__title_two{
+    pointer-events: none;
     color: brown;
 }
 
 
+.slide{
+    padding-left: 15px;
+}
+
+.box{
+    position: absolute;
+    display: inline;
+    width: 400px;
+    box-shadow: 1px 3px 2px 3px #1111;
+    border-radius: 10px;
+}
+
+#column2{
+    left: 530px;
+}
+
+#column1{
+
+    left: 940px;
+}
+
+
+.review{
+    pointer-events: none;
+
+}
+
+.columnThree__list,
+.ColumnOne__list,
+.columnTwo__list,
+.columnTwo__title,
+.review__list{
+    pointer-events: none;
+}
+
 
 .review__content{
+    pointer-events: none;
     position: relative;
     top: 50px;
 }
@@ -332,6 +371,7 @@ li:before {
 }
 
 .review__item_list{
+    pointer-events: none;
 position: relative;
 right: 20px;
 top: 10px;
@@ -340,6 +380,8 @@ padding: 18px;
 font-size: 13px;
 box-shadow: 1px 3px 2px 3px #1111;
 }
+
+
 a {
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -350,9 +392,22 @@ a:hover{
   transition: 0.3s;
 }
 
-.columnThree{
-    width: 400px;
-    height: 400px;
+
+
+.review__title{
+    padding-left: 15px;
+}
+
+
+
+.columnThree__title{
+    padding-left: 25px;
+    pointer-events: none;
+    
+}
+
+.columnOne__controls{
+    padding-left: 15px;
 }
 
 .columnThree__content{
@@ -412,8 +467,7 @@ a:hover{
     height: 370px;
     width: 370px;
 }
-.slider__controls {
-}
+
 .columnOne__btnPrev {
     position: relative;
     top: 460px;
@@ -424,61 +478,79 @@ a:hover{
     left:345px
 }
 
-.adaptiveOne{
+.adaptive{
     display: none;
 }
-
-
-
-
 
 
 /* Portrait phones and smaller */
-@media(max-width: 600px) {
+@media(max-width: 480px) {
+
+    body{
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .landing{
+        display: none;
+    }
+
+    .adaptive{
+        display: block;
+    }
  
 
-    .boxleft__reviews{
-     display: none;
-    }
-   
-.boxleft__link{
-    display: none;
-}
-
-    .boxleft__reviewstext{
-        display: none;
-    }
-     .boxrigh__baner{
-        display: none;
-
+    .form__title{
+        text-align: center;
+        font-size: 34px;
     }
 
-    .form{
-        position:absolute;
-        top: 0;
+    .form__formtext{
+        text-align: center;
+    }
+
+    form{
+        padding: 50px;
+        background-color: gray;
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    input{
+        margin-top: 10px;
+        border-radius: 10px;
+        border: 0;
+    }
+
+    button{
+        margin-top: 20px;
+        border-radius: 10px;
+        color: white;
+        background-color: brown;
+        border: 0;
+    }
+
+    .boxone{
+        margin: 0 auto;
+    }
+
+
+    #column{
+        top: 450px;
+        left: 00px
+    }
+
+    #column1{
+        top: 1220px;
         left: 0;
-        border-radius: 0px 0px 20px 10px;
-        width: 100%;
+    }
+    #column2{
+        top: 1890px;
+        left: 0;
     }
 
-    .columnOne{
-        position: absolute;
-        top: 400px;
-    }
-
-    .columnTwo{
-        position: absolute;
-        top: 1150px;
-        width: 280px;
-    }
-
-
-    .columnThree{
-        position: absolute;
-        top: 1900px;
-    }
-
-
- 
-} 
+}
 

@@ -53,16 +53,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const btnPrev = document.querySelector('.columnOne__btnNext');
         
         sliderItems.forEach(function (slide, index) {
-            // Скрываем все слайды, кроме первого
+
             if (index !== 0) slide.classList.add('hidden');
         
-            // Добавляем индексы
+
             slide.dataset.index = index;
         
-            // Добавляем data атрибут active для первого / активного слайда
+
             sliderItems[0].setAttribute('data-active', '');
         
-            // Клик по слайдам
+
             slide.addEventListener('click', function () {
                 showNextSlide('next');
             });
@@ -79,13 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         
         function showNextSlide(direction) {
-            // Скрываем текущий слайд
+
             const currentSlide = slider.querySelector('[data-active]');
             const currentSlideIndex = +currentSlide.dataset.index;
             currentSlide.classList.add('hidden');
             currentSlide.removeAttribute('data-active');
         
-            // Рассчитываем след индекс в зависимости от направления движения
+
             let nextSlideIndex;
             if (direction === 'next') {
                 nextSlideIndex = currentSlideIndex + 1 === sliderItems.length ? 0 : currentSlideIndex + 1;
@@ -93,34 +93,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 nextSlideIndex = currentSlideIndex === 0 ? sliderItems.length - 1 : currentSlideIndex - 1;
             }
         
-            // Показываем след слайд
+
             const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
             nextSlide.classList.remove('hidden');
             nextSlide.setAttribute('data-active', '');
         }
-      
+    
 
 
-        document.querySelectorAll('#column').forEach(e => {
-            e.draggable = true;
-            e.ondragstart = e => {
-              e.dataTransfer.setData("id", e.target.id);
-              e.target.classList.add('dragging');
-            }
-            e.ondragover = e => {
-              let old = document.querySelector('.over');
-              old && old.classList.remove('over')
-              e.target.classList.add('over');
-              e.preventDefault();
-            };
-            e.ondrop = e => {
-              let old = document.querySelector('.dragging');
-              old && old.classList.remove('dragging')
-              old = document.querySelector('.over');
-              old && old.classList.remove('over');
-              let v = e.target.innerHTML;
-              let fromEl = document.querySelector('#'+e.dataTransfer.getData('id'));
-              e.target.innerHTML = fromEl.innerHTML;
-              fromEl.innerHTML = v;
-            };
-          })
+        document.querySelectorAll('.box').forEach(e => {
+          e.draggable = true;
+          e.ondragstart = e => {
+            e.dataTransfer.setData("id", e.target.id);
+            e.target.classList.add('dragging');
+          }
+          e.ondragover = e => {
+            let old = document.querySelector('.over');
+            old && old.classList.remove('over')
+            e.target.classList.add('over');
+            e.preventDefault();
+          };
+          e.ondrop = e => {
+            let old = document.querySelector('.dragging');
+            old && old.classList.remove('dragging')
+            old = document.querySelector('.over');
+            old && old.classList.remove('over');
+            let v = e.target.innerHTML;
+            let fromEl = document.querySelector('#'+e.dataTransfer.getData('id'));
+            e.target.innerHTML = fromEl.innerHTML;
+            fromEl.innerHTML = v;
+        
+          };
+        })
